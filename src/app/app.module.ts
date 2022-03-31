@@ -19,6 +19,7 @@ import { ColorTwitterModule } from '../lib/twitter/twitter.component';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer.component';
 import { ColorShadeModule } from '../lib/shade/shade-picker.component';
+import { LandmarkColorChromeModule } from 'src/lib/landmark-chrome/chrome.component';
 
 @NgModule({
   declarations: [AppComponent, FooterComponent],
@@ -41,6 +42,7 @@ import { ColorShadeModule } from '../lib/shade/shade-picker.component';
     ColorSwatchesModule,
     ColorTwitterModule,
     ColorShadeModule,
+    LandmarkColorChromeModule
   ],
   providers: [],
   bootstrap: [AppComponent],

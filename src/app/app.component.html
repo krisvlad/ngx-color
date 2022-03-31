@@ -23,12 +23,18 @@
     <div class="col-md-6">
       <div class="d-flex justify-content-center justify-content-md-end mt-5">
         <div style="padding-top: 20px; display: block">
-          <color-chrome
+          <!-- <color-chrome
             [color]="state"
             (onChangeComplete)="changeComplete($event)"
           >
           </color-chrome>
-          <div class="text-center label">Chrome</div>
+          <div class="text-center label">Chrome</div> -->
+          <landmark-color-chrome
+            [color]="state"
+            (onChangeComplete)="changeComplete($event)"
+          >
+          </landmark-color-chrome>
+          <div class="text-center label">Landmark-Chrome-Version</div>
         </div>
       </div>
     </div>
