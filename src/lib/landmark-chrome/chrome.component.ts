@@ -97,7 +97,7 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
         border-radius: 2px;
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.3);
         box-sizing: initial;
-        width: 225px;
+        /* width: 230px; */
         font-family: 'Menlo';
         display: flex;
         flex-direction: row;
@@ -107,10 +107,17 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
         display: flex;
       }
       .chrome-color {
-        width: 42px;
+        /* width: 42px; */
+        text-align: center;
       }
       .chrome-body {
         padding: 14px 14px 12px;
+      }
+      .chrome-body-right {
+        width: 50px;
+      }
+      .chrome-body-left {
+        width: 200px;
       }
       .chrome-active {
         position: absolute;
@@ -127,6 +134,7 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
         height: 28px;
         border-radius: 15px;
         position: relative;
+        display: inline-block;
         overflow: hidden;
       }
       .saturation {
@@ -139,15 +147,16 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
       .chrome-toggles {
         display: flex;
         flex-direction: row;
+        gap: 10px;
       }
       .chrome-hue {
-        height: 100px;
+        height: 135px;
         position: relative;
         margin-bottom: 8px;
         flex-grow: 1
       }
       .chrome-alpha {
-        height: 100px;
+        height: 135px;
         position: relative;
         flex-grow: 1
       }
@@ -178,10 +187,10 @@ export class LandmarkChromeComponent extends ColorWrap {
     transform: 'translate(-6px, -8px)',
   };
   pointer: Record<string, string> = {
-    width: '12px',
-    height: '12px',
-    borderRadius: '6px',
-    transform: 'translate(-6px, -2px)',
+    width: '18px',
+    height: '18px',
+    borderRadius: '50%',
+    transform: 'translate(-1px, -11px)',
     backgroundColor: 'rgb(248, 248, 248)',
     boxShadow: '0 1px 4px 0 rgba(0, 0, 0, 0.37)',
   };
